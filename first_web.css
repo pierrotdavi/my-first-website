@@ -57,7 +57,7 @@ img{
 	width: 400px;
 	height: 200px;
 	margin: 10px;
-	filter: grayscale(100%);
+	filter: grayscale(90%);
 	transition: all 1s;
 }
 
