@@ -5,6 +5,7 @@
 	min-height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(blackg.jpg) no-repeat center center fixed;
 	background-size: cover;
+	animation: ;
 }
 
 h1{
@@ -53,16 +54,16 @@ html{
 	justify-content: center;
 }
 
-img{
+.main img{
 	width: 400px;
 	height: 200px;
 	margin: 10px;
-	filter: grayscale(90%);
+	filter: grayscale(50%);
 	transition: all 1s;
 }
 
 img:hover{
-	filter: brightness(100%);
+	filter: brightness(110%);
 	transform: scale(1.05);
 }
 
@@ -80,15 +81,24 @@ body{
 .left-box{
 	display: block;
 	background-color: black;
+	color: rgb(242, 241, 239);
 	font-family: fantasy;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 200px;
+	filter: brightness(100%);
 	
-
-
+	
 }
+
+.left-box:hover{
+	background-color: white;
+	color: black;
+	transform: scale(1.0);
+}
+
+
 .right-box{
 	background-color: white;
 	height: 200px;
@@ -100,7 +110,14 @@ body{
 	height: 100%;
 	margin: 0;
 	object-fit: cover;
+	filter: brightness(100%);
 	
+
+}
+
+.right-box:hover img{
+	filter: grayscale(100%);
+	transform: scale(1.0);
 }
 
 .container-fluid{
@@ -136,7 +153,8 @@ body{
 .test-box h2{
 	font-family: fantasy;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 120px;
+	margin-bottom: 30px;
 }
 
 .btn{
